@@ -30,7 +30,7 @@ def pointBFS(pos:tuple, triangle:tuple):
     while passes > 0:
         if isInside((pointer[0],pointer[1]), triangle):
             points.append((pointer[0],pointer[1]))
-            if (pointer[0]-2*(abs(pointer[0]-pos[0])), pointer[1]) not in points:
+            if (pointer[0]-pos[0]) != 0:
                 points.append((pointer[0]-2*(abs(pointer[0]-pos[0])), pointer[1]))
             pointer[0] += 1
         else:

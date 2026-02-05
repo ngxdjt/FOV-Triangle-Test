@@ -1,9 +1,9 @@
 import math
 import triangle
 
-A = 50
-pos = (7,4)
-fov = 50*(math.pi/180)
+A = 67
+pos = (6,7)
+fov = 67*(math.pi/180)
 
 sight = triangle.generate(pos, A, fov)
 
